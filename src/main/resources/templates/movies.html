@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Pagina songs</title>
+</head>
+<body>
+<p th:each="movie:${movies}" th:text="${movie.getTitle()}"> </p>
+</body>
+</html>
