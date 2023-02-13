@@ -10,7 +10,7 @@ public class Song {
 		this.titolo = titolo;
 	}
 
-	public String getTitolo() {
+	public String getTitle() {
 		return titolo;
 	}
 
