@@ -2,9 +2,12 @@
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
 <meta charset="ISO-8859-1">
-<title>Pagina movies</title>
+<title>Songs</title>
+<div th:replace="~{fragments :: head}"></div>
 </head>
 <body>
-<p th:each="song:${songs}" th:text="${song.getTitle()}"> </p>
+
+<div th:replace="~{fragments :: navbar}"></div>
+<div th:replace="~{fragments :: layout('Songs list', ${songs})}"></div>
 </body>
 </html>
