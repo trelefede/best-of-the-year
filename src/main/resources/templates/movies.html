@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
-<meta charset="ISO-8859-1">
-<title>Movies</title>
-<div th:replace="~{fragments :: head}"></div>
+	<div th:replace="~{fragments :: head}"></div>
+	<title>Movies</title>
 </head>
 <body>
+	<div th:replace="~{fragments :: navbar}"></div>
 
-<div th:replace="~{fragments :: navbar}"></div>
-<div th:replace="~{fragments :: layout('Movies list', ${movies})}"></div>
+	<div class="container">	
+		<div th:replace="~{fragments :: layout('Movies list', 'movies', ${movies})}"></div>
+	</div>
 </body>
 </html>

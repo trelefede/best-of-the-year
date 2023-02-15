@@ -14,4 +14,8 @@ public class Song {
 		return titolo;
 	}
 
+	public int getId() {
+		return id;
+	}
+
 }
