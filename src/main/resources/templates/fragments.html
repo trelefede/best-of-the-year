@@ -24,11 +24,11 @@
  	</li>
  </ul>
  
- <div th:fragment="layout(title, items)" class="container">
+ <div th:fragment="layout(title, url, items)" class="container">
  	<h1 th:text="${title}"></h1>
 	<ul>
 		<li th:each="item : ${items}">
-			<a th:href="@{movies/{id}(id=${item.getId()})}" th:text="${item.getTitle()}"> </a>
+			<a th:href="@{/{url}/{id}(id=${item.getId()}, url=${url})}" th:text="${item.getTitle()}"> </a>
 		</li>
 	</ul>
 	
